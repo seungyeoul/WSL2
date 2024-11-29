@@ -25,6 +25,21 @@ C:\> dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /
 wsl --set-default-version 2
 ~~~
 
+- Rancher Desktop 설치
+  https://rancherdesktop.io
+
+  - Rancher 저장소 서명 추가
+  ~~~
+  $ curl -s https://download.opensuse.org/repositories/isv:/Rancher:/stable/deb/Release.key | gpg --dearmor | sudo dd status=none of=/usr/share/keyrings/isv-rancher-stable-archive-keyring.gpg
+  ~~~
+
+  - Rancher 저장소 추가
+  ~~~
+  $ echo 'deb [signed-by=/usr/share/keyrings/isv-rancher-stable-archive-keyring.gpg] https://download.opensuse.org/repositories/isv:/Rancher:/stable/deb/ ./' | sudo dd status=none of=/etc/apt/sources.list.d/isv-rancher-stable.list
+  $ sudo apt update
+  ~~~
+  
+
 - WSL 명령어
   - 배포판 나열
   ~~~
