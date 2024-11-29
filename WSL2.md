@@ -38,6 +38,19 @@ wsl --set-default-version 2
   $ echo 'deb [signed-by=/usr/share/keyrings/isv-rancher-stable-archive-keyring.gpg] https://download.opensuse.org/repositories/isv:/Rancher:/stable/deb/ ./' | sudo dd status=none of=/etc/apt/sources.list.d/isv-rancher-stable.list
   $ sudo apt update
   ~~~
+
+  - Rancher Desktop 패키지 설치
+  ~~~
+  $ sudo apt install rancher-desktop
+  ~~~
+
+  - Rancher Desktop 삭제
+  ~~~
+  $ sudo apt remove --autoremove rancher-desktop
+  $ sudo rm /etc/apt/sources.list.d/isv-rancher-stable.list
+  $ sudo rm /usr/share/keyrings/isv-rancher-stable-archive-keyring.gpg
+  $ sudo apt update
+  ~~~
   
 
 - WSL 명령어
