@@ -31,3 +31,8 @@ wsl --set-default-version 2
   C:\> wsl --list            # 리눅스 배포판들의 목록
   C:\> wsl --list --running  # 실행 중인 리눅스 배포판들의 목록
   ~~~
+
+  - list 목록에 있는 프로그램 삭제
+  ~~~
+  C:\> wsl --unregister 대상 프로그램
+  ~~~
