@@ -15,16 +15,18 @@ C:\> dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-L
 C:\> dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ~~~
 
-
-- WSL을 사용하여 Windows에 Linux를 설치하는 방법
-  
-  https://learn.microsoft.com/ko-kr/windows/wsl/install#install-yrour-linux-distribution-of-choice
+- WSL 다운로드
+  https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 - 설치하는 리눅스 배포판의 WSL2 버전을 기본값으로 설정
 ~~~
 wsl --set-default-version 2
 ~~~
 
+- WSL을 사용하여 Windows에 Linux를 설치하는 방법
+  
+  https://learn.microsoft.com/ko-kr/windows/wsl/install#install-yrour-linux-distribution-of-choice
+  
 - Rancher Desktop 설치
   https://rancherdesktop.io
 
